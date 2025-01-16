@@ -2,8 +2,8 @@ import express from "express";
 
 const router=express.Router();
 router.get('/',(req,res)=>{
-   console.log(req.body);
-   res.render('home',{title:"home page",user:req.body.userName})
+  const {userName,emailAddress}= req.body;
+   res.render('home',{title:userName,userName,emailAddress})
 })
 
 export default router;
