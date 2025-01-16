@@ -17,6 +17,8 @@ app.use(express.json());
 app.use(cors({
     origin:"*"
 }));
+
+app.use(express.urlencoded({ extended: false }));
 app.use("/",indexRoute);
 app.use("/signup",signupRoute);
 app.use("/home",homeRoute);
