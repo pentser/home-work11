@@ -5,6 +5,7 @@ import indexRoute from "./routes/index.js";
 import homeRoute from "./routes/home.js";
 import signupRoute from "./routes/signup.js";
 
+
 const app = express();
 
 const PORT=process.env.PORT || 3000;
